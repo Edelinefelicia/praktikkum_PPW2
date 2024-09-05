@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostSatuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/posts', [PostController::class, 'index']
+);
+Route::get('/postingansatu', [PostSatuController::class, 'index']
 );
